@@ -1,0 +1,17 @@
+javascript
+document.getElementById('qrInput').addEventListener('change', function() {
+    const resultDiv = document.getElementById('result');
+    const status = document.getElementById('status');
+    const details = document.getElementById('details');
+    
+    resultDiv.classList.remove('hidden', 'safe', 'danger');
+    status.innerText = "Analyzing safety...";
+    
+    // Simulating a backend check
+    setTimeout(() => {
+        const isSafe = Math.random() > 0.5; // Randomly decide safety for demo
+        resultDiv.classList.add(isSafe ? 'safe' : 'danger');
+        status.innerText = isSafe ? "✅ Safe Link Detected" : "⚠️ Malicious Link Detected";
+        details.innerText = isSafe ? "The URL is verified as legitimate." : "Warning: This QR code redirects to a phishing site!";
+    }, 2000);
+});

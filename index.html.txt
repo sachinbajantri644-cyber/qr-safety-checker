@@ -1,0 +1,23 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Safety Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ QR Safety Checker</h1>
+        <p>Upload a QR code to check for malicious links.</p>
+        
+        <input type="file" id="qrInput" accept="image/*">
+        <div id="result" class="hidden">
+            <h2 id="status">Scanning...</h2>
+            <p id="details"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+css
+body { font-family: sans-serif; display: flex; justify-content: center; padding: 50px; background: #f4f4f9; }
+.container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+.hidden { display: none; }
+#result { margin-top: 20px; padding: 15px; border-radius: 5px; }
+.safe { background: #d4edda; color: #155724; }
+.danger { background: #f8d7da; color: #721c24; }
